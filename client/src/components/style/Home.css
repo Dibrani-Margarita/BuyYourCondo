@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row {
+    padding: 1rem;
+}
+
+.row .app-title {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.row .slogan {
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin: 1rem;
+}
+
+.main {
+    background-color: lightgray;
+    width: 60%;
+    box-shadow: 0px 5px 15px rgba(140, 140, 140, 0.5);
+}
+
+.description {
+    background-color: lightgray;
+    width: 60%;
+    box-shadow: 0px 5px 15px rgba(140, 140, 140, 0.5);
+}
