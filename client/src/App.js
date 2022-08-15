@@ -5,6 +5,7 @@ import CondoList from './components/CondoList';
 import NewCondo from './components/NewCondo';
 import Condo from './components/Condo';
 import Home from './components/Home';
+import EditCondo from './components/EditCondo';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/condos" element={<CondoList />} />
         <Route path="/new" element={<NewCondo />} />
         <Route path="/condo/:id" element={<Condo />} />
+        <Route path="/condo/edit/:id" element={<EditCondo />} />
       </Routes>
       </div>
     </BrowserRouter>
