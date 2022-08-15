@@ -29,6 +29,7 @@ const CondoList = () => {
             <h2>{condo.name}</h2>
             <img src={condo.image} alt={condo.name} />
             <br />
+            <p style={{ 'font-weight':"bold"}}>${condo.price}</p>
             <Link to={`/condo/${condo._id}`}>Details</Link>
             <span> | </span>
             <Link to={`/condo/edit/${condo._id}`}>Edit</Link>

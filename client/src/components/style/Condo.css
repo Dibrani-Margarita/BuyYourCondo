@@ -1,0 +1,29 @@
+.info-container {
+    margin-top: 3rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.attributes h2 {
+    margin-bottom: 2rem;
+}
+
+.info > div {
+    text-align: left;
+}
+
+.image img {
+    max-width: 400px;
+    max-height: 500px;
+}
+
+button {
+    margin-top: 2rem;
+}
