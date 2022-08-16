@@ -29,10 +29,8 @@ module.exports = {
             .json(newCondo);
         })
         .catch((err) => {
-            console.log("ERROR IN GET CREATE CONDO", err);
-            res
-            .status(400)
-            .json({ message: "Something went wrong in create condo", errors: err.errors });
+            console.log("ERROR IN CREATE CONDO", err);
+            res.status(400).json({ message: "Something went wrong in create condo", errors: err.errors });
         });
     },
     updateCondo: (req, res) => {
@@ -41,8 +39,8 @@ module.exports = {
             res.json(condo);
         })
         .catch((err) => {
-            console.log("ERROR IN GET UPDATE CONDO", err);
-            res.status(400).json({ message: "Something went wrong in update condo", error: err });
+            console.log("ERROR IN UPDATE CONDO", err);
+            res.status(400).json({ message: "Something went wrong in update condo", errors: err.errors });
         });
     },
     deleteCondo: (req, res) => {
@@ -51,7 +49,7 @@ module.exports = {
             res.json(condo);
         })
         .catch((err) => {
-            console.log("ERROR IN GET DELETE CONDO", err);
+            console.log("ERROR IN DELETE CONDO", err);
             res.status(400).json({ message: "something went wrong in delete condo", error: err });
         });
     }
